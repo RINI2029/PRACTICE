@@ -69,7 +69,7 @@ public class tax
             this.quantity = quantity;
         }
 
-        // Getters and Setters
+        
         public int getPid() {
             return pid;
         }
@@ -94,7 +94,7 @@ public class tax
             this.quantity = quantity;
         }
 
-        // Implement calcTax to calculate sales tax on unit price
+        
         @Override
         public double calcTax() {
             return price * SALES_TAX * quantity;
@@ -106,10 +106,10 @@ public class tax
         public void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
 
-            // Input Employee information
+            
             System.out.print("Enter Employee ID: ");
             int empID = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
             System.out.print("Enter Employee Name: ");
             String name = scanner.nextLine();
             System.out.print("Enter Employee Salary: ");
@@ -119,7 +119,7 @@ public class tax
             double incomeTax = employee.calcTax();
             System.out.printf("Income Tax for Employee %s (ID: %d) is: %.2f%n", name, empID, incomeTax);
 
-            // Input Product information
+            
             System.out.print("Enter Product ID: ");
             int pid = scanner.nextInt();
             System.out.print("Enter Product Price: ");
@@ -135,3 +135,4 @@ public class tax
         }
     }
 }
+
